@@ -1,5 +1,5 @@
 ---
-name: BUG-REPORT
+name: BUG REPORT
 about: 'TEMPLATE REPORT BUG '
 title: "[BUG]"
 labels: ''
