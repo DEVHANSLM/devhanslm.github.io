@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-image: 
+    repeating-radial-gradient(circle at 50% 0%, #00ff80, #03f079 1%, #05dd71 2%),
+    repeating-radial-gradient(circle at 50% 0%, #00ff80, #03f079 1%, #05dd71 2%);
+    background-size: 75% 175%; /* Permitir el movimiento */
+    animation: gradientAnimation 30s linear infinite; /* Movimiento continuo */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 50% 0%; /* Comienza en la parte superior central */
+      background-size: 100% 200%; /* Ajusta el tamaño del gradiente */
+    }
+    100% {
+      background-position: 50% 100%; /* Termina en la parte inferior */
+      background-size: 100% 200%; /* Ajusta el tamaño del gradiente */
+    }
+  }
+
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .game-board {
+    margin-bottom: 20px;
+  }
+  
+  .sticks-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .stick {
+    width: 25px;
+    height: 150px;
+    background: linear-gradient(to bottom, #FFD700, #B8860B);
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    margin: 5px;
+    border-radius: 15px; /* Bordes redondeados */
+  }
+  
+  .stick.selected {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .info-panel {
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons {
+    margin: 20px 0;
+  }
+  
+  .level-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .level-buttons-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .level-row {
+    margin: 10px 0;
+  }
+  
+  .level-buttons button {
+    margin: 0 5px;
+  }

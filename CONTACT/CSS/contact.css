@@ -1,0 +1,291 @@
+/* Estilos para el cuerpo */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans';
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+    transform: scale(1); /* Escala la página */
+  transform-origin: 0 0; /* Establece el origen de la escala en la esquina superior izquierda */
+}
+
+/* Estilos para la cabecera */
+header {
+  width: 100%;
+  height: 125px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el logo */
+.logo {
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+/* Estilos para el menu */
+/* Estilos para pantallas con ancho de 1360px o menos */
+@media (max-width: 1360px) {
+  nav {
+    width: 100px; /* Reducir ancho del menú */
+    padding: 10px; /* Reducir padding del menú */
+  nav ul li a {
+    font-size: 12spx; /* Reducir tamaño de fuente del menú */
+    padding: 12px; /* Reducir padding del menú */
+  }
+  .menu-horizontal > li ul.submenu {
+    padding: 6px; /* Reducir padding del submenu */
+    min-width: 90px; /* Reducir ancho mínimo del submenu */
+  }
+  .menu-horizontal > li ul.submenu li a {
+    padding: 6px; /* Reducir padding del submenu */
+  }
+  nav {
+    background-color: #333;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+    width: 200px; /* Ancho del menú */
+    position: fixed;
+    top: 125px; /* Bajar el menú 105px */
+    left: 0;
+    z-index: 999;
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    position: relative; /* Fijar el footer en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 15px; /* Reducir padding del footer */
+  }
+}
+} 
+nav {
+  background-color: #333;
+  font-size: 20px;
+  padding: 20px;
+  margin-right: 40px;
+  display: block;
+  width: 200px; /* Ancho del menú */
+  position: fixed;
+  top: 125px; /* Bajar el menú 175px */
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+nav ul li {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+}
+
+/* Estilos para el submenu */
+.menu-horizontal > li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.menu-horizontal > li > ul.submenu {
+  position: absolute;
+  top: -15px;
+  left: 113%;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  padding: 5px;
+  display: none;
+}
+
+.menu-horizontal > li ul.submenu {
+  position: absolute;
+  top: -40%;
+  left: 112%;
+  background-color: #5e5e5e;
+  border: 0px solid #ddd;
+  padding: 10px;
+  min-width: 160px;
+}
+
+.menu-horizontal > li:hover > ul.submenu {
+  display: block;
+}
+
+.menu-horizontal > li ul.submenu li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu-horizontal > li:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+}
+
+.menu-horizontal > li > ul.submenu li a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-horizontal > li > ul.submenu li a:hover {
+  background-color: #5e5e5e;
+  padding: 8px;
+}
+
+/* Estilos para el contenido */
+.container {
+  max-width: 800px;
+  margin-left: 50px;
+  position: absolute;
+  padding: 30px;
+  top: 30%;
+  left: calc(50% + 100px);
+  right: 100px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+  margin-bottom: 40px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact i {
+  margin-right: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  clear: both;
+  margin-top: 100px;
+}
+
+/* Media queries para ajustar el diseño según el tamaño de la pantalla */
+@media (max-width: 767px) {
+  .container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    margin: 30px auto;
+    padding: 25px;
+  }
+  nav {
+    padding: 15px;
+  }
+  nav li {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 40px auto;
+    padding: 30px;
+  }
+  nav {
+    padding: 20px;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+}
+

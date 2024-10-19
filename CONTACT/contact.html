@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../ICONOS/logo.png" alt="Logo">
+        </div>
+        <nav class="menu-container">
+            <ul class="menu-horizontal">
+                <li>
+                    <a href="../index.html">Hub</a>
+                </li>
+                <li>
+                <a href="#">Technology</a>
+                <ul class="submenu">
+                  <li><a href="../THE SUBSTRACTION GAME/technology.html">The Substraction Game</a></li>
+                  <li><a href="#">Task 1</a></li>
+                  <li><a href="#">Task 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Digitization</a>
+                <ul class="submenu">
+                  <li><a href="../PROVA 1/prova1.html">Prova 1</a></li>
+                  <li><a href="../PROVA 2/prova2.html">Prova 2</a></li>
+                  <li><a href="../PROVA 3/prova3.html">Prova 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <h1 style="margin: 0 auto; display: block; text-align: center;">M08 Aplicacions Web</h1>
+    </header>
+    <main>
+        <div style="height: 200px;"></div>    
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>CONTACT<br>INFROMATION</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> admin@dertroxzcm.es</p>
+            </section>
+        </section>
+
+        <form action="https://formspree.io/f/xvgpjdol" method="post" class="form_contact">
+            <h2>Send a message</h2>
+            <div class="user_info">
+                <label for="names">Names *</label>
+                <input type="text" id="names">
+
+                <label for="phone">Telephone *</label>
+                <input type="text" id="phone">
+
+                <label for="email">Email*</label>
+                <input type="text" id="email">
+
+                <label for="mensaje">Message*</label>
+                <textarea id="mensaje"></textarea>
+
+                <input type="button" value="Send message" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 M08 Aplicacions Web |  <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>

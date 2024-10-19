@@ -1,0 +1,271 @@
+/* Estilos globales */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+ h1 {
+  text-align: left !important;
+}
+
+h3, h5 {
+  color: #333;
+}
+p {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Estilos para la cabecera */
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #F07D7D;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 28px;
+  max-width: calc(100% - 200px); /* Ajustado para un solo logo */
+}
+
+.logo {
+  width: 160px;
+  height: 100%;
+  position: relative;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#logo-derecho {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+  margin-left: 65px;
+}
+
+#logo-derecho img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.logo-container {
+  position: relative;
+  margin-bottom: 0px; /* Agrega un margen inferior para separar del contenido */
+}
+
+.titulo {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #333;
+  font-size: 14px;
+  padding: 20px;
+  display: block;
+  width: 140px; /* or a fixed width, e.g., 180px */
+  position: fixed;
+  top: 100px; /* or a specific value, e.g., 100px */
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px; /* Espacio entre los items del menú */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: block; /* Hacemos que cada item del menú se muestre en una línea */
+}
+
+nav ul li a {
+  display: block; /* Hacemos que cada enlace del menú se muestre en una línea */
+  padding: 10px; /* Agregamos padding a los enlaces del menúme */
+}
+/* Estilos para pantallas con ancho de 1360px o menos */
+@media (max-width: 1360px) {
+  nav ul li a {
+    font-size: 16px; /* Reducir tamaño de fuente del menú */
+    padding: 12px; /* Reducir padding del menú */
+  }
+  .menu-horizontal > li ul.submenu {
+    padding: 6px; /* Reducir padding del submenu */
+    min-width: 90px; /* Reducir ancho mínimo del submenu */
+  }
+  .menu-horizontal > li ul.submenu li a {
+    padding: 6px; /* Reducir padding del submenu */
+  }
+  nav {
+    background-color: #333;
+    font-size: 14px;
+    padding: 20px;
+    display: block;
+    width: 140px; /* Ancho del menu desplegable, 180px */
+    position: fixed;
+    top: 100px; /* Distancia desde del header al menu 100px */
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 120px; /* Opcional, para que el contenedor del menú ocupe toda la anchura de la pantalla */
+  z-index: 999; /* Opcional, para que el contenedor del menú se muestre encima de otros elementos */
+}
+
+.menu-horizontal > li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.menu-horizontal > li > ul.submenu {
+  position: absolute;
+  top: -15px;
+  left: 113%;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  padding: 5px;
+  display: none;
+}
+
+.menu-horizontal > li ul.submenu {
+  position: absolute;
+  top: -40%;
+  left: 112%;
+  background-color: #5e5e5e;
+  border: 0px solid #ddd;
+  padding: 10px; /* Aumentamos el padding para dar más espacio */
+  min-width: 160px; /* Aumentamos el ancho mínimo para que se vea más amplio */
+}
+.menu-horizontal > li:hover > ul.submenu {
+  display: block;  /* Mostramos el submenu solo cuando el usuario esté en la área de activación */
+}
+
+.menu-horizontal > li > ul.submenu li {
+  display: block;
+  margin-bottom: 10px;
+}
+.menu-horizontal > li:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px; /* Creamos un área de activación hacia la derecha */
+  width: 20px;
+  height: 100%;
+  background-color: transparent; /* No mostramos nada en esta área */
+}
+.menu-horizontal > li > ul.submenu li a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-horizontal > li > ul.submenu li a:hover {
+  background-color: #5e5e5e;
+  padding: 8px 
+}
+
+/* Estilos para el contenido */
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 
+}
+/* Estilos para la sección de diseño gráfico */
+
+.design-graphic {
+  margin-bottom: 40px;
+}
+
+.design-graphic ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.design-graphic li {
+  margin-bottom: 10px;
+}
+
+.design-graphic i {
+  margin-right: 10px;
+}
+
+/* Estilos para la sección de desarrollo */
+
+.development {
+  margin-bottom: 40px;
+}
+
+.development ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.development li {
+  margin-bottom: 10px;
+}
+
+.development i {
+  margin-right: 10px;
+}
+
+/* Estilos para el pie de página */
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 30px; /* 20px de padding superior e inferior, 30px de padding izquierdo y derecho */
+  text-align: center;
+}
+

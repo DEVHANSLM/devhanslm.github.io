@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCrackedGame</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="level-display">The Subtraction Game : Nivel: 1</h1>
+        <div class="game-board">
+            <div class="instructions">
+                <p>¡Eres tú contra la computadora! Elimina hasta 3 palos haciendo clic en ellos. ¡Quien elimine el último palo gana!</p>
+            </div>
+            <div class="sticks-container" id="sticks-container">
+                <!-- Aquí se insertarán los palos dinámicamente -->
+            </div>
+            <div class="info-panel">
+                <p>Número de palos: <span id="remaining-stones">--</span></p>
+                <p>Máximo que puedes quitar: 3</p>
+                <h3 id="turn-indicator"></h3> <!-- Indicador de turno -->
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="pass-turn-button" onclick="passTurn()" disabled>Pasar Turno</button>
+            <button onclick="restartGame()">Reiniciar Juego</button>
+        </div>
+    </div>
+
+    <!-- Nuevo contenedor para los botones de niveles -->
+    <div class="level-container">
+        <div class="level-buttons-container"> <!-- Contenedor blanco -->
+            <div class="level-buttons" id="level-buttons">
+                <div class="level-row">
+                    <button id="level1" onclick="selectLevel(1)">Nivel 1</button>
+                    <button id="level2" onclick="selectLevel(2)" disabled>Nivel 2 &#128274;</button>
+                    <button id="level3" onclick="selectLevel(3)" disabled>Nivel 3 &#128274;</button>
+                    <button id="level4" onclick="selectLevel(4)" disabled>Nivel 4 &#128274;</button>
+                    <button id="level5" onclick="selectLevel(5)" disabled>Nivel 5 &#128274;</button>
+                </div>
+                <div class="level-row">
+                    <button id="level6" onclick="selectLevel(6)" disabled>Nivel 6 &#128274;</button>
+                    <button id="level7" onclick="selectLevel(7)" disabled>Nivel 7 &#128274;</button>
+                    <button id="level8" onclick="selectLevel(8)" disabled>Nivel 8 &#128274;</button>
+                    <button id="level9" onclick="selectLevel(9)" disabled>Nivel 9 &#128274;</button>
+                    <button id="level10" onclick="selectLevel(10)" disabled>Nivel 10 &#128274;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

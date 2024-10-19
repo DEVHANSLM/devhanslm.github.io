@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para los títulos */
+        h1, h2, h5 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los párrafos */
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para los botones */
+        #inicio-btn {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute; /* Posicionamos el botón absolutamente */
+            top: 10px; /* Distancia desde la parte superior */
+            right: 10px; /* Distancia desde la parte derecha */
+        }
+
+        #inicio-btn:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Estilos para los h5 */
+        .tech-list {
+            overflow: hidden; /* Contenedor para los h5 */
+        }
+
+        .tech-list h5 {
+            float: left; /* Posicionamos los h5 a la izquierda */
+            margin-right: 20px; /* Espacio entre los h5 */
+        }
+
+        .tech-list .left {
+            float: left; /* Posicionamos los h5 de la izquierda */
+        }
+
+        .tech-list .right {
+            float: right; /* Posicionamos los h5 de la derecha */
+        }
+
+        .clearfix {
+            clear: both; /* Limpiamos el flujo de los elementos flotantes */
+        }
+    </style>
+</head>
+<body>
+    <h1>Benvinguts a la meva página web</h1>
+    <p>Aqui podras trobar molt contingut.</p>
+    <br>
+    <h3>Vols aprendre a programar?</h3>
+    <p>Posa't en contacte amb mi, podràs aprendre</p>
+    <div class="tech-list">
+        <h5 class="left">HTML</h5>
+        <h5 class="left">CSS</h5>
+        <h5 class="left">JavaScript</h5>
+        <div class="clearfix"></div> <!-- Limpiamos el flujo de los elementos flotantes -->
+        <h5 class="left">MySQL</h5>
+        <h5 class="left">Python</h5>
+        <h5 class="left">PHP</h5>
+    </div>
+    <p>Escriume un correu a haslaomoncusi@instorredemalla.cat</p>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9F5VsJGYiAbEtFYJzg-PMV13jVPFxEJqouQ&s">Google magico</a>
+    <a href="../index.html"><button id="inicio-btn">Inicio</button></a>
+</body>
+</html>
