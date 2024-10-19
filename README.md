@@ -11,12 +11,12 @@
 
 ## 🛠️ Recursos y Lenguajes Usados
 
-![Visual Studio Code](https://img.shields.io/badge/Editor-Visual%20Studio%20Code-blue)
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blueviolet)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![jQuery](https://img.shields.io/badge/jQuery-3.6.0-blue)
-![GitHub](https://img.shields.io/badge/Platform-GitHub-lightgrey)
+![Editor](https://img.shields.io/badge/Editor-Visual%20Studio%20Code-blue?style=for-the-badge)
+![HTML](https://img.shields.io/badge/HTML-5-orange?style=for-the-badge)
+![CSS](https://img.shields.io/badge/CSS-3-blueviolet?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)
+![jQuery](https://img.shields.io/badge/jQuery-3.6.0-blue?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/Platform-GitHub-lightgrey?style=for-the-badge)
 
 - **Editor**: Visual Studio Code
 - **Lenguajes**: HTML, CSS, JavaScript, jQuery
