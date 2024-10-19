@@ -9,6 +9,19 @@
 
 **MI PORTAFOLIO** es un proyecto innovador que busca optimizar la gestión de contenidos digitales, facilitando la interacción entre usuarios y ofreciendo herramientas intuitivas que mejoran la productividad y la colaboración en línea. 
 
+## 🛠️ Recursos y Lenguajes Usados
+
+![Visual Studio Code](https://img.shields.io/badge/Editor-Visual%20Studio%20Code-blue)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blueviolet)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![jQuery](https://img.shields.io/badge/jQuery-3.6.0-blue)
+![GitHub](https://img.shields.io/badge/Platform-GitHub-lightgrey)
+
+- **Editor**: Visual Studio Code
+- **Lenguajes**: HTML, CSS, JavaScript, jQuery
+- **Control de Versiones**: GitHub
+
 ## 🚀 Características
 
 - **Interfaz Intuitiva**: Diseñada para ser fácil de usar, permitiendo que los usuarios naveguen y encuentren lo que necesitan sin complicaciones.
