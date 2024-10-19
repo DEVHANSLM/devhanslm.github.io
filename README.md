@@ -1,9 +1,9 @@
 # MI PORTAFOLIO
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20desarrollo-orange)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-green)
-![Version](https://img.shields.io/badge/Versión-1.0.0-blue)
-![Contribuciones](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen)
+![Estado del Proyecto](https://img.shields.io/badge/Estado-En%20desarrollo-orange?style=for-the-badge&logo=github)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
+![Versión](https://img.shields.io/badge/Versión-1.0.0-blue?style=for-the-badge)
+![Contribuciones](https://img.shields.io/badge/Contribuciones-Bienvenidas-brightgreen?style=for-the-badge)
 
 ## 🌟 Descripción
 
@@ -34,3 +34,12 @@
 - **Análisis y Reportes**: Funcionalidades que permiten a los usuarios generar informes sobre el uso y la eficacia del contenido, ayudando en la toma de decisiones informadas.
 - **Soporte y Documentación**: Acceso a recursos de ayuda y soporte técnico para resolver dudas y facilitar el uso de la plataforma.
 - **Actualizaciones Regulares**: Mejora continua de la plataforma con nuevas características y correcciones basadas en la retroalimentación de los usuarios.
+
+## 📞 Contacto
+
+Si tienes alguna pregunta, sugerencia o deseas colaborar, no dudes en ponerte en contacto conmigo:
+
+- **Correo Electrónico**: admin@dertroxzcm.es
+- **LinkedIn**: [HansLM](https://www.linkedin.com/in/hanslaomoncusi/)
+
+¡Estoy aquí para ayudar!
