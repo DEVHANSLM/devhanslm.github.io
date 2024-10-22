@@ -48,49 +48,6 @@ header h1 {
     position: relative;
 }
 
-.logo-text {
-    position: absolute;
-    height: auto;
-    transform: translateY(-57.5%);
-    background-color: transparent;
-    padding: 15px;
-    font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: none;
-}
-
-.logo-container-right:hover .logo-text {
-    display: block;
-    animation: slideOut 3s forwards;
-}
-
-@keyframes slideOut {
-    0% {
-        transform: translateX(0);
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-100px);
-        opacity: 1;
-    }
-}
-
-.logo-text.fade-out {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.logo-text.animation-complete {
-    transform: translateX(-100px);
-}
-
-
 .logo-hans {
     width: 160px; /* Limita el ancho de la imagen a un 30% del contenedor padre */
     height: 100%;
@@ -222,9 +179,9 @@ header h1 {
   }
 
   .boton-cv:hover {
-    background: linear-gradient(145deg, #FF4081, #FF80AB); /* Degradado más claro al pasar el ratón */
+    background-color: #d33333;
     box-shadow: 20px 20px 60px #D50000; /* Sombra más clara */
-    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el ratón */
+    transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
 }
   
   footer {
