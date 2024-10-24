@@ -1,78 +1,157 @@
-/* Reset básico */
+/* ========================= */
+/* RESET STYLES             */
+/* ========================= */
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Estilos generales */
+/* ========================= */
+/* VARIABLES                 */
+/* ========================= */
+
+:root {
+    --main-bg-color: #ffffff; /* Color de fondo principal */
+    --body-bg-image: url('https://i.ibb.co/SK485N4/background-digi.png'); /* Imagen de fondo del body */
+    --footer-bg-color: #f8f9fa; /* Color de fondo del footer */
+    --text-color: #333; /* Color del texto */
+    --primary-color: #FFC107; /* Color primario */
+    --secondary-color: #0099ff; /* Color secundario */
+}
+
+/* ========================= */
+/* GLOBAL STYLES             */
+/* ========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Color de fondo */
-    color: #333; /* Color del texto */
+    font-family: 'Hack Nerd Font', monospace; /* Usa la fuente local y proporciona una fuente de respaldo */
+    margin: 0;
+    background-image: var(--body-bg-image);
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
 }
 
-/* Estilos del header */
+/* ========================= */
+/* HEADER STYLES            */
+/* ========================= */
+
 header {
-    background: #333; /* Color de fondo del header */
-    color: #fff; /* Color del texto del header */
-    padding: 20px 0;
-    text-align: center;
+    height: 100px; /* Establece la altura del header en 100px */
+    background-image: url(https://i.ibb.co/HhWnrWV/background-digi.png);
+    background-size: auto;    
+    margin: 0; /* Elimina el margen del header */
+    padding: 0; /* Elimina el padding del header */
+    display: flex; /* Usa flexbox para el centrado */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
-.logo img {
-    max-width: 150px; /* Ajusta el tamaño del logo */
+header h1 {
+    color: #FFC107;
+    margin: 0; /* Elimina el margen del título */
+    font-size: 28px; /* Establece el tamaño de fuente del título en 24px */
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
-.menu-container {
-    margin: 15px 0;
+.logo-container {
+    width: 160px; /* Ancho del contenedor del logo */
+    height: 100%; /* Altura del contenedor del logo */
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    align-items: center; /* Centra verticalmente el logo */
+    overflow: hidden;
 }
 
-.menu-horizontal {
-    list-style: none;
+.logo-hans {
+    width: 160px; /* Ancho del logo */
+    height: 100px; /* Altura del logo */
+    margin: 0; /* Elimina el margen del logo */
+    transition: transform 0.5s ease-in-out;
 }
 
-.menu-horizontal li {
-    display: inline;
-    margin: 0 15px;
+.logo-container:hover .logo-hans {
+    transform: scale(1.1); /* Efecto de hover */
 }
 
-.menu-horizontal a {
-    color: #fff; /* Color de los enlaces */
-    text-decoration: none;
+.logo-container-right {
+    display: flex;
+    justify-content: flex-end; /* Alinea el logo derecho a la derecha */
+    align-items: center;
+    margin-left: auto; /* Empuja el logo derecho a la esquina derecha */
 }
 
-/* Estilos de la sección About Me */
-.about-me {
-    max-width: 800px; /* Ancho máximo de la sección */
-    margin: 20px auto; /* Centrar la sección */
-    padding: 20px; /* Espaciado interno */
-    background: #fff; /* Fondo blanco para la sección */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+#logo-derecho {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo derecho */
+    height: auto; /* Mantiene la proporción del logo */
+    margin: 5px 5px 5px 0;
 }
 
-.about-me h2, .about-me h3 {
-    color: #333; /* Color de los encabezados */
-    margin-bottom: 10px; /* Espaciado inferior */
+/* ========================= */
+/* MAIN CONTENT STYLES      */
+/* ========================= */
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
 }
 
-.about-me p {
-    margin-bottom: 15px; /* Espaciado inferior para párrafos */
+/* ========================= */
+/* SECTION STYLES           */
+/* ========================= */
+
+.about-me, .experience, .skills, .interests, .future-goals, .contact {
+    margin-bottom: 30px; /* Espacio entre secciones */
 }
 
-.about-me ul {
+h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
     margin-left: 20px; /* Indentación para listas */
 }
 
-/* Estilos del footer */
+/* ========================= */
+/* CONTACT SECTION STYLES    */
+/* ========================= */
+
+.contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* FOOTER STYLES            */
+/* ========================= */
+
 footer {
+    background-color: var(--footer-bg-color );
     text-align: center;
-    padding: 10px 0;
-    background: #333; /* Color de fondo del footer */
-    color: #fff; /* Color del texto del footer */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+    color: var(--text-color);
 }

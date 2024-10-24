@@ -3,6 +3,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-image: url(../WEB/ICONS/background.png);
+  background-size: cover;
+  background-position: center;
   margin: 0;
   padding: 0;
 }
