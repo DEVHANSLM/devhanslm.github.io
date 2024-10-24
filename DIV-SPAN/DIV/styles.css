@@ -1,0 +1,57 @@
+body {
+    background-image: url(https://i.ibb.co/12gB560/background.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div1, .div2, .div3, .div4 {
+   font-size: 1.225em;
+}
+
+.div1 {
+    background-color: #ffcccb;
+    border-radius: 20px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+.div2 {
+    background-color: #add8e6;
+    border-radius: 20px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+.div3 {
+    background-color: #90ee90;
+    border-radius: 20px;
+    width: 150px;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+.div4 {
+    background-color: #ffff77;
+    border-radius: 20px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+
+img {
+    align-items: center, top;
+    max-width: 75px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}

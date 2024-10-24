@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos del header */
+header {
+    background: #333; /* Color de fondo del header */
+    color: #fff; /* Color del texto del header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+}
+
+.menu-container {
+    margin: 15px 0;
+}
+
+.menu-horizontal {
+    list-style: none;
+}
+
+.menu-horizontal li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-horizontal a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+/* Estilos de la sección About Me */
+.about-me {
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Centrar la sección */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Fondo blanco para la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.about-me h2, .about-me h3 {
+    color: #333; /* Color de los encabezados */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.about-me p {
+    margin-bottom: 15px; /* Espaciado inferior para párrafos */
+}
+
+.about-me ul {
+    margin-left: 20px; /* Indentación para listas */
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
