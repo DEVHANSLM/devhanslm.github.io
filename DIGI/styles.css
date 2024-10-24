@@ -160,10 +160,42 @@ header h1 {
     text-shadow: 0px 1px 10px #A00000; /* sombra de texto */
 }
 
+.boton-div {
+  display: block;
+  margin-bottom: 10px; /* espacio entre botones */
+  background: linear-gradient(145deg, #8e44ad, #9b59b6); /* Degradado de rojo a rosa */
+  box-shadow: 20px 20px 60px #500b5e; /* Sombra más oscura para dar profundidad */
+  border-radius: 25px;
+  border: 2px solid #7a288a; /* Borde del mismo color que el degradado */
+  cursor: pointer;
+  color: #ffffff; /* texto blanco */
+  font-size: 27px;
+  font-weight: bold;
+  padding: 15px 38px;
+  text-decoration: none;
+  text-shadow: 0px 1px 10px #5c2e8f; /* sombra de texto */
+}
+
+.boton-span {
+  display: block;
+  margin-bottom: 10px; /* espacio entre botones */
+  background: linear-gradient(145deg, #f4c20d, #f7e74e); /* Degradado de rojo a rosa */
+  box-shadow: 20px 20px 60px #d3a700; /* Sombra más oscura para dar profundidad */
+  border-radius: 25px;
+  border: 2px solid #b59400; /* Borde del mismo color que el degradado */
+  cursor: pointer;
+  color: #ffffff; /* texto blanco */
+  font-size: 27px;
+  font-weight: bold;
+  padding: 15px 38px;
+  text-decoration: none;
+  text-shadow: 0px 1px 10px #9b7f00; /* sombra de texto */
+}
+
   .boton-prova:hover {
     background-color: #34c975; /* un tono más claro que el original */
     box-shadow: 20px 20px 60px #7ff57f;
-    transform: scale(1.2);
+    transform: scale(0.75);
   }
   
   .boton-llistes:hover {
@@ -182,6 +214,18 @@ header h1 {
     background-color: #d33333;
     box-shadow: 20px 20px 60px #D50000; /* Sombra más clara */
     transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+.boton-div:hover {
+  background-color: #b066d8;
+  box-shadow: 20px 20px 60px #8e44ad; /* Sombra más clara */
+  transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+.boton-span:hover {
+  background-color: #f6d40e;
+  box-shadow: 20px 20px 60px #f4c20d; /* Sombra más clara */
+  transform: scale(1.15); /* Aumenta el tamaño del botón al pasar el ratón */
 }
   
   footer {
@@ -210,98 +254,27 @@ header h1 {
     height: 100%; /* Asegúrate de que el contenedor tenga un alto específico */
   }
 
-  /* From Uiverse.io by wilsondesouza */ 
-ul {
-    list-style: none;
-  }
-  
-  .example-2 {
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .example-2 .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-  .example-2 .icon-content .tooltip {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 14px;
-    width: max-content;
-    transition: all 0.3s ease;
-  }
-  .example-2 .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: -50px;
-    display: block;
-  }
-  .example-2 .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #202020;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-  .example-2 .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-  .example-2 .icon-content a:hover {
-    color: white;
-  }
-  .example-2 .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover .filled {
-    height: 100%;
-  }
-  
-  .example-2 .icon-content a[data-social="linkedin"] .filled,
-  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-    background-color: #0274b3; /* Color de fondo de LinkedIn */
-  }
-  
-  .example-2 .icon-content a[data-social="linkedin"]:hover .filled {
-    height: 100%; /* Llena el fondo en negro */
-  }
-  
-  .example-2 .icon-content a[data-social="github"] .filled,
-  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
-    background-color: #24262a;
-  }
-  
-  .example-2 .icon-content a[data-social="github"]:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-    transform: scale(1.25); /* Aumenta el tamaño del icono */
+    flex-direction: flex; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espacio entre las secciones */
+    margin: 20px; /* Margen alrededor del contenedor */
 }
 
-.example-2 .icon-content a[data-social="linkedin"]:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-    transform: scale(1.25); /* Aumenta el tamaño del icono */
+.taules-cv-container {
+    display: flex; /* Usa flexbox para alinear taules y cv horizontalmente */
+    gap: 20px; /* Espacio entre taules y curriculum */
+}
+
+.taules {
+    align-items: top;
+}
+
+.cv {
+    align-items: center;
+    flex: 0 0  200px; /* Fija el ancho del CV a 200px */
+}
+
+.div-i-span {
+    padding: 20px; /* Espacio interno */
 }
