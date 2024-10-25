@@ -60,23 +60,25 @@ header h1 {
 }
 
 .logo-container {
-    width: 160px; /* Ancho del contenedor del logo */
-    height: 100%; /* Altura del contenedor del logo */
+    width: 160px;
+    height: 100%;
+    flex: 1;
     display: flex;
-    justify-content: flex-start; /* Alinea el logo a la izquierda */
-    align-items: center; /* Centra verticalmente el logo */
+    justify-content: flex-start;
+    align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .logo-hans {
-    width: 160px; /* Ancho del logo */
-    height: 100px; /* Altura del logo */
-    margin: 0; /* Elimina el margen del logo */
+    width: 160px; /* Limita el ancho de la imagen a un 30% del contenedor padre */
+    height: 100%;
+    margin: 0; /* Agrega un margen para separar la imagen del título */
     transition: transform 0.5s ease-in-out;
 }
 
 .logo-container:hover .logo-hans {
-    transform: scale(1.1); /* Efecto de hover */
+    transform: scale(1.75);
 }
 
 .logo-container-right {
