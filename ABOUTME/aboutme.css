@@ -9,20 +9,24 @@
 }
 
 /* ========================= */
-/* VARIABLES                 */
+/*         VARIABLES         */
 /* ========================= */
 
 :root {
     --main-bg-color: #ffffff; /* Color de fondo principal */
     --body-bg-image: url('https://i.ibb.co/SK485N4/background-digi.png'); /* Imagen de fondo del body */
     --footer-bg-image: url('https://i.ibb.co/5FFFbvW/images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s.jpg" alt="images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s');
-    --text-color: #333; /* Color del texto */
-    --primary-color: #333; /* Color primario */
-    --secondary-color: #FFC107; /* Color secundario */
+    --text-color: #333;
+    --primary-color: #333; 
+    --secondary-color: #2a2a2a; 
+    --tertiary-color: #FFC107;
+    --quaternary-color: rgb(75, 75, 255); 
+
+
 }
 
 /* ========================= */
-/* GLOBAL STYLES             */
+/*       GLOBAL STYLES       */
 /* ========================= */
 
 body {
@@ -34,7 +38,7 @@ body {
 }
 
 /* ========================= */
-/* HEADER STYLES            */
+/*        HEADER STYLES      */
 /* ========================= */
 
 header {
@@ -51,7 +55,7 @@ header {
 header h1 {
     color: #FFC107;
     margin: 0; /* Elimina el margen del título */
-    font-size: 28px; /* Establece el tamaño de fuente del título en 24px */
+    font-size: 2.1em; /* Establece el tamaño de fuente del título en 24px */
     position: absolute;
     top: 50px;
     left: 50%;
@@ -85,7 +89,7 @@ header h1 {
     display: flex;
     justify-content: flex-end; /* Alinea el logo derecho a la derecha */
     align-items: center;
-    margin-left: auto; /* Empuja el logo derecho a la esquina derecha */
+    margin-left: 0; /* Empuja el logo derecho a la esquina derecha */
 }
 
 #logo-derecho {
@@ -99,12 +103,14 @@ header h1 {
 /* ========================= */
 
 .main-content {
-    max-width: 800px;
+    max-width: 950px;
     margin: 20px auto;
+    margin-bottom: 5em;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 20px 20px 100px #bebebe,
+                -20px -20px 100px #ffffff;
     color: var(--text-color);
 }
 
@@ -131,11 +137,11 @@ ul {
 }
 
 /* ========================= */
-/* CONTACT SECTION STYLES    */
+/*  CONTACT SECTION STYLES   */
 /* ========================= */
 
 .contact a {
-    color: var(--secondary-color);
+    color: var(--quaternary-color);
     text-decoration: none;
 }
 
@@ -153,10 +159,9 @@ footer {
     text-align: center;
     padding: 20px 0;
     color: var(--secondary-color);
-    border-top: 1px solid #ccc;
 }
 
 footer p {
     margin: 0;
-    color: var(--secondary-color)
+    color: var(--tertiary-color)
 }
