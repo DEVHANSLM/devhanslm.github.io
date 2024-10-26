@@ -15,7 +15,7 @@
 :root {
     --main-bg-color: #ffffff; /* Color de fondo principal */
     --body-bg-image: url('https://i.ibb.co/SK485N4/background-digi.png'); /* Imagen de fondo del body */
-    --footer-bg-image: url('https://i.ibb.co/5FFFbvW/images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s.jpg" alt="images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s');
+    --footer-bg-image: url('https://i.ibb.co/5FFFbvW/images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s.jpg');
     --text-color: #333;
     --primary-color: #333; 
     --secondary-color: #2a2a2a; 
