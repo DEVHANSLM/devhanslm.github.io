@@ -1,0 +1,123 @@
+└── 📁WEB
+    └── 📁.git
+    └── 📁ABOUTME
+        └── aboutme.html
+        └── aboutme.css
+    └── 📁CONTACT
+        └── 📁CSS
+            └── contact.css
+            └── estilos.css
+            └── font-awesome.cssw
+        └── 📁JavaScript
+            └── jquery-3.2.1.js
+            └── script.js
+        └── contact.html
+    └── 📁CVV
+        └── CV - copia.html
+        └── CV.html
+    └── 📁DIGI
+        └── index.html
+        └── script.js
+        └── styles.css
+    └── 📁DIV-SPAN
+        └── 📁DIV
+            └── exercici1.html
+        └── 📁SPAN
+            └── exercici2.html
+    └── 📁FONTS
+        └── 📁DADDYTIME NERD FONT
+            └── DaddyTimeMono.zip
+            └── DaddyTimeMonoNerdFont-Regular.ttf
+            └── DaddyTimeMonoNerdFontMono-Regular.ttf
+            └── DaddyTimeMonoNerdFontPropo-Regular.ttf
+            └── LICENSE.md
+            └── README.md
+        └── 📁ENERGY-STATION-FONT
+            └── Energy Station.jpg
+            └── Energy Station.otf
+            └── energy_station.zip
+            └── Energy-Station.ttf
+            └── More info.txt
+            └── Read Me.pdf
+        └── 📁HACK NERD FONT
+            └── Hack.zip
+            └── HackNerdFont-Bold.ttf
+            └── HackNerdFont-BoldItalic.ttf
+            └── HackNerdFont-Italic.ttf
+            └── HackNerdFont-Regular.ttf
+            └── HackNerdFontMono-Bold.ttf
+            └── HackNerdFontMono-BoldItalic.ttf
+            └── HackNerdFontMono-Italic.ttf
+            └── HackNerdFontMono-Regular.ttf
+            └── HackNerdFontPropo-Bold.ttf
+            └── HackNerdFontPropo-BoldItalic.ttf
+            └── HackNerdFontPropo-Italic.ttf
+            └── HackNerdFontPropo-Regular.ttf
+            └── LICENSE.md
+            └── README.md
+        └── 📁PALADINS FONT
+            └── paladins.ttf
+            └── paladins.txt
+            └── paladins.zip
+            └── paladins3d.ttf
+            └── paladinscond.ttf
+            └── paladinsexpand.ttf
+            └── paladinsgrad.ttf
+            └── paladinslaser.ttf
+            └── paladinsleft.ttf
+            └── paladinsout.ttf
+            └── paladinssemiital.ttf
+            └── paladinsstraight.ttf
+            └── paladinssuperital.ttf    
+    └── 📁ICONS
+        └── after-effects.png
+        └── background-digi-header.png
+        └── background-digi-header2.jpg
+        └── background.png
+        └── blender.png
+        └── c++.png
+        └── csharp.png
+        └── css.png
+        └── ⭐favicon.ico
+        └── fimga.png
+        └── github.svg
+        └── html.png
+        └── infojobs.svg
+        └── javascript.png
+        └── linkedin.svg
+        └── logo-hanslm.png
+        └── logo-w3c.png
+        └── logo-wikipedia.png 
+        └── logo.png
+        └── mysql.png
+        └── photoshop.png
+        └── premiere-pro.png
+        └── python.png
+    └── 📁LISTS
+        └── llistes1.html
+        └── llistes2.html
+        └── llistes3.html
+        └── llistes4.html
+    └── 📁PROVA 1
+        └── prova1.html
+    └── 📁PROVA 2
+        └── prova2.html
+    └── 📁PROVA 3
+        └── prova3.html
+    └── 📁TAULES
+        └── taules1.html
+    └── 📁THE SUBSTRACTION GAME
+        └── script.js
+        └── styles.css
+        └── technology.html
+    └── index.html
+    └── styles.css
+    └── logo.png
+    └── instorredemalla.png
+    └── README.md
+    └── LICENSE.txt
+    └── SECURITY.md
+    └── CODE_OF_CONDUCT.md
+    └── feature-request.md
+    └── bug-report.md
+    └── CNAME

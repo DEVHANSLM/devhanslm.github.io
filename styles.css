@@ -271,5 +271,6 @@ footer {
   background-position: center;
   padding: 20px 30px; /* 20px de padding superior e inferior, 30px de padding izquierdo y derecho */
   text-align: center;
+  height: 3.75em;
 }
 
