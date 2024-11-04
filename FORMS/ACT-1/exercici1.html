@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulari de Registre</title>
+</head>
+<body>
+    <div class="formulari-container">
+        <h1>Formulari de Registre</h1>
+        <form action="#" method="post">
+            <div class="grup-formulari">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="cognoms">Cognoms:</label>
+                <input type="text" id="cognoms" name="cognoms" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="telefon">Telèfon:</label>
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="adreca">Adreça:</label>
+                <input type="text" id="adreca" name="adreca" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="email">Correu Electrònic:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="data_naixement">Data de naixement:</label>
+                <input type="date" id="data_naixement" name="data_naixement" required>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="sexe">Sexe:</label>
+                <select id="sexe" name="sexe" required>
+                    <option value="">Selecciona una opció</option>
+                    <option value="home">Home</option>
+                    <option value="dona">Dona</option>
+                    <option value="altre">Altre</option>
+                </select>
+            </div>
+
+            <div class="grup-formulari">
+                <label for="observacions">Observacions:</label>
+                <textarea id="observacions" maxlength="460" name="observacions"></textarea>
+                <div class="contador">
+                    <span id="contador_caracteres">0</span>/460
+                </div>
+            </div>
+
+            <div class="botons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        const textarea = document.getElementById("observacions");
+        const contador = document.getElementById("contador_caracteres");
+        const maxCaracteres = textarea.getAttribute("maxlength");
+
+        textarea.addEventListener("input", function() {
+            const caracteresActuales = textarea.value.length;
+            contador.innerText = caracteresActuales;
+            
+            // Cambiar color según cantidad de caracteres
+            if (caracteresActuales >= maxCaracteres - 10) {
+                contador.style.color = '#f44336'; // Rojo
+            } else if (caracteresActuales >= maxCaracteres - 60) {
+                contador.style.color = '#ff9800'; // Naranja
+            } else {
+                contador.style.color = '#555'; // Color normal
+            }
+        });
+    </script>
+</body>
+</html>
+
+

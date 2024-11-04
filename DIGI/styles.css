@@ -74,6 +74,14 @@ header h1 {
     margin: 5px 5px 5px 0;
 }
 
+.boton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-row-gap: 20px; /* Espacio vertical entre filas */
+  grid-column-gap: 10px; /* Espacio horizontal entre columnas */
+  margin-top: 20px;
+}
+
 /* Contenedor para las columnas */
 .container {
     display: flex;
@@ -92,143 +100,151 @@ header h1 {
 
 .column:hover {
     width: 250px; /* Cambia el ancho de la columna cuando se pasa el ratón por encima de ella */
-  }
+}
+
+/* Contenedor para los botones de Proves y Forms */
+.boton-container {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para tener dos filas */
+    gap: 20px; /* Espacio entre filas */
+}
+
+/* Fila 1: Proves, Llistes, Taules, Curriculum */
+.boton-fila-1 {
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
+}
+
+/* Fila 2: Div i Span, Forms */
+.boton-fila-2 {
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
+}
 
 /* Estilos para los botones */
-.boton-prova {
-    background: linear-gradient(145deg, #3db35d, #49d56e);
-    box-shadow:  20px 20px 60px #3aa958;
-    border-radius: 25px;
-    border: 2px solid #18ab29;
+.boton-prova, .boton-llistes, .boton-taules, .boton-cv, .boton-div, .boton-span, .boton-form1, .boton-form2, .boton-form3 {
     display: block;
+    margin-bottom: 10px; /* espacio entre botones */
+    border-radius: 25px;
     cursor: pointer;
-    color: #ffffff;
+    color: #ffffff; /* texto blanco */
     font-size: 27px;
     font-weight: bold;
     padding: 15px 38px;
     text-decoration: none;
-    text-shadow: 0px 1px 10px #2f6627;
-    margin-bottom: 10px;
     transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
+.boton-prova {
+    background: linear-gradient(145deg, #3db35d, #49d56e);
+    box-shadow: 20px 20px 60px #3aa958;
+    border: 2px solid #18ab29;
+}
+
 .boton-llistes {
-    display: block;
-    margin-bottom: 10px; /* espacio entre botones */
     background: linear-gradient(145deg, #008ab8, #00a4da);
-    box-shadow:  20px 20px 60px #0082ad;
-    border-radius: 25px;
+    box-shadow: 20px 20px 60px #0082ad;
     border: 2px solid #0066cc; /* azul oscuro */
-    cursor: pointer;
-    color: #ffffff; /* texto blanco */
-    font-size: 27px;
-    font-weight: bold;
-    padding: 15px 38px;
-    text-decoration: none;
-    text-shadow: 0px 1px 10px #0044cc; /* sombra de texto */
-  }
+}
 
-  .boton-taules {
-    display: block;
-    margin-bottom: 10px; /* espacio entre botones */
+.boton-taules {
     background: linear-gradient(145deg, #e68a00, #ffa400);
-    box-shadow:  20px 20px 60px #d98200;
-    border-radius: 25px;
+    box-shadow: 20px 20px 60px #d98200;
     border: 2px solid #ff6600; /* naranja oscuro */
-    cursor: pointer;
-    color: #ffffff; /* texto blanco */
-    font-size: 27px;
-    font-weight: bold;
-    padding: 15px 38px;
-    text-decoration: none;
-    text-shadow: 0px 1px 10px #cc4400; /* sombra de texto */
-  }
+}
 
-  .boton-cv {
-    display: block;
-    margin-bottom: 10px; /* espacio entre botones */
+.boton-cv {
     background: linear-gradient(145deg, #D50000, #FF4081); /* Degradado de rojo a rosa */
     box-shadow: 20px 20px 60px #A00000; /* Sombra más oscura para dar profundidad */
-    border-radius: 25px;
     border: 2px solid #FF4081; /* Borde del mismo color que el degradado */
-    cursor: pointer;
-    color: #ffffff; /* texto blanco */
-    font-size: 27px;
-    font-weight: bold;
-    padding: 15px 38px;
-    text-decoration: none;
-    text-shadow: 0px 1px 10px #A00000; /* sombra de texto */
 }
 
 .boton-div {
-  display: block;
-  margin-bottom: 10px; /* espacio entre botones */
-  background: linear-gradient(145deg, #8e44ad, #9b59b6); /* Degradado de rojo a rosa */
-  box-shadow: 20px 20px 60px #500b5e; /* Sombra más oscura para dar profundidad */
-  border-radius: 25px;
-  border: 2px solid #7a288a; /* Borde del mismo color que el degradado */
-  cursor: pointer;
-  color: #ffffff; /* texto blanco */
-  font-size: 27px;
-  font-weight: bold;
-  padding: 15px 38px;
-  text-decoration: none;
-  text-shadow: 0px 1px 10px #5c2e8f; /* sombra de texto */
+    background: linear-gradient(145deg, #8e44ad, #9b59b6); /* Degradado de rojo a rosa */
+    box-shadow: 20px 20px 60px #500b5e; /* Sombra más oscura para dar profundidad */
+    border: 2px solid #7a288a; /* Borde del mismo color que el degradado */
 }
 
 .boton-span {
-  display: block;
-  margin-bottom: 10px; /* espacio entre botones */
-  background: linear-gradient(145deg, #f4c20d, #f7e74e); /* Degradado de rojo a rosa */
-  box-shadow: 20px 20px 60px #d3a700; /* Sombra más oscura para dar profundidad */
-  border-radius: 25px;
-  border: 2px solid #b59400; /* Borde del mismo color que el degradado */
-  cursor: pointer;
-  color: #ffffff; /* texto blanco */
-  font-size: 27px;
-  font-weight: bold;
-  padding: 15px 38px;
-  text-decoration: none;
-  text-shadow: 0px 1px 10px #9b7f00; /* sombra de texto */
+    background: linear-gradient(145deg, #f4c20d, #f7e74e); /* Degradado de rojo a rosa */
+    box-shadow: 20px 20px 60px #d3a700; /* Sombra más oscura para dar profundidad */
+    border: 2px solid #b59400; /* Borde del mismo color que el degradado */
 }
 
-  .boton-prova:hover {
+/* Estilos para los botones de Forms */
+.boton-form1 {
+    background: linear-gradient(145deg, #ff6f00, #ff8f00); /* Degradado de naranja */
+    box-shadow: 20px 20px 60px #cc5e00; /* Sombra más oscura */
+    border: 2px solid #ff8f00; /* Borde del mismo color que el degradado */
+}
+
+.boton-form2 {
+    background: linear-gradient(145deg, #00bcd4, #00e5ff); /* Degradado de azul claro */
+    box-shadow: 20px 20px 60px #0097a7; /* Sombra más oscura */
+    border: 2px solid #00bcd4; /* Borde del mismo color que el degradado */
+}
+
+.boton-form3 {
+    background: linear-gradient(145deg, #ff4081, #ff80ab); /* Degradado de rosa */
+    box-shadow: 20px 20px 60px #c60055; /* Sombra más oscura */
+    border: 2px solid #ff4081; /* Borde del mismo color que el degradado */
+}
+
+.boton-prova:hover {
     background-color: #34c975; /* un tono más claro que el original */
     box-shadow: 20px 20px 60px #7ff57f;
     transform: scale(0.75);
-  }
-  
-  .boton-llistes:hover {
+}
+
+.boton-llistes:hover {
     background-color: #00aaff; /* un tono más claro que el original */
     box-shadow: 20px 20px 60px #0044cc;
     transform: scale(1.2); /* Aumenta el tamaño del botón en un 10% */
-  }
-  
-  .boton-taules:hover {
+}
+
+.boton-taules:hover {
     background-color: #ffa633; /* un tono más claro que el original */
     box-shadow: 20px 20px 60px #cc4400;
     transform: scale(1.2); /* Aumenta el tamaño del botón en un 10% */
-  }
+}
 
-  .boton-cv:hover {
+.boton-cv:hover {
     background-color: #d33333;
     box-shadow: 20px 20px 60px #D50000; /* Sombra más clara */
     transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
 }
 
 .boton-div:hover {
-  background-color: #b066d8;
-  box-shadow: 20px 20px 60px #8e44ad; /* Sombra más clara */
-  transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+    background-color: #b066d8;
+    box-shadow: 20px 20px 60px #8e44ad; /* Sombra más clara */
+    transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
 }
 
 .boton-span:hover {
-  background-color: #f6d40e;
-  box-shadow: 20px 20px 60px #f4c20d; /* Sombra más clara */
-  transform: scale(1.15); /* Aumenta el tamaño del botón al pasar el ratón */
+    background-color: #f6d40e;
+    box-shadow: 20px 20px 60px #f4c20d; /* Sombra más clara */
+    transform: scale(1.15); /* Aumenta el tamaño del botón al pasar el ratón */
 }
-  
-  footer {
+
+.boton-form1:hover {
+    background-color: #ff8f00; /* un tono más claro que el original */
+    box-shadow: 20px 20px 60px #cc5e00; /* Sombra más clara */
+    transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+.boton-form2:hover {
+    background-color: #00e5ff; /* un tono más claro que el original */
+    box-shadow: 20px 20px 60px #0097a7; /* Sombra más clara */
+    transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+.boton-form3:hover {
+    background-color: #ff80ab; /* un tono más claro que el original */
+    box-shadow: 20px 20px 60px #c60055; /* Sombra más clara */
+    transform: scale(1.2); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,9 +257,9 @@ header h1 {
     position: fixed;
     bottom: 0;
     left: 0;
-  }
+}
 
-  .footer-text {
+.footer-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,13 +268,6 @@ header h1 {
     color: #666;
     margin-bottom: 1.25em;
     height: 100%; /* Asegúrate de que el contenedor tenga un alto específico */
-  }
-
-  .container {
-    display: flex;
-    flex-direction: flex; /* Alinea los elementos verticalmente */
-    gap: 20px; /* Espacio entre las secciones */
-    margin: 20px; /* Margen alrededor del contenedor */
 }
 
 .taules-cv-container {

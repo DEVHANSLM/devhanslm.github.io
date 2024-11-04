@@ -1,0 +1,95 @@
+body {
+    font-family: Cascadia Code, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.formulari {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.seccio {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.grup-formulari {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input:required {
+    border-radius: 3px solid #f44336; 
+}
+
+label:has(+ input:required)::after {
+    content: "*";
+    color: #f44336;
+}
+
+input[type="text"], 
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contador {
+    float: right;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    max-height: 300px; /* Altura máxima al redimensionar */
+    max-width: 100%; /* Ancho máximo */
+    min-height: 100px; /* Altura mínima */
+}
+
+.botons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.preu-grup {
+    display: flex;
+    gap: 10px;
+}
+
+.preu-grup input,
+.preu-grup select {
+    width: auto;
+}
+
+.promocio-opcions {
+    margin-left: 20px;
+}

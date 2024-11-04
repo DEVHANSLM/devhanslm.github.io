@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulari de Contacte</title>
+</head>
+<body>
+    <div class="formulari">
+        <h2>Formulari de Contacte</h2>
+        <form action="#" method="post">
+            <!-- Input tipus text per nom i cognoms -->
+            <div class="camp">
+                <label for="nom">Nom i cognoms:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <!-- Input tipus email per correu electrònic -->
+            <div class="camp">
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Input tipus tel per número de telèfon -->
+            <div class="camp">
+                <label for="telefon">Número de telèfon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+
+            <!-- Textarea per observacions -->
+            <div class="camp">
+                <label for="observacions">Observacions:</label>
+                <textarea id="observacions" maxlength="460" name="observacions"></textarea>
+                <div class="contador"></div>
+                    <span id="contador_caracteres">0</span>/460
+                </div>
+            </div>
+
+            <button type="submit" class="boto-enviar">Enviar</button>
+        </form>
+    </div>
+    <script>
+        const textarea = document.getElementById("observacions");
+        const contador = document.getElementById("contador_caracteres");
+        const maxCaracteres = textarea.getAttribute("maxlength");
+
+        textarea.addEventListener("input", function() {
+            const caracteresActuales = textarea.value.length;
+            contador.innerText = caracteresActuales;
+            
+            // Cambiar color según cantidad de caracteres
+            if (caracteresActuales >= maxCaracteres - 10) {
+                contador.style.color = '#f44336'; // Rojo
+            } else if (caracteresActuales >= maxCaracteres - 60) {
+                contador.style.color = '#ff9800'; // Naranja
+            } else {
+                contador.style.color = '#555'; // Color normal
+            }
+        });
+    </script>
+</body>
+</html>
+
