@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+    display: none;  /* Para Chrome, Safari y Opera */
+  }
+
 body {
     font-family: Arial, sans-serif;
     max-width: 600px;

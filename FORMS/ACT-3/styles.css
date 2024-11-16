@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+    display: none;  /* Para Chrome, Safari y Opera */
+  }
+
 body {
     font-family: Cascadia Code, sans-serif;
     max-width: 600px;
@@ -14,7 +18,7 @@ body {
     background-color: #333;
     color: white;
     padding: 5px 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -55,9 +59,9 @@ select {
 }
 
 textarea {
-    height: 100px;
+    height: 6rem;
     resize: none;
-    max-height: 300px; /* Altura máxima al redimensionar */
+    max-height: 350px; 
     max-width: 100%; /* Ancho máximo */
     min-height: 100px; /* Altura mínima */
 }
@@ -76,8 +80,19 @@ button {
     cursor: pointer;
 }
 
+.button-submit {
+    background-color: rgb(29, 192, 0);
+    border-radius: 5px;
+}
+
+.button-reset {
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
 button:hover {
     background-color: #555;
+    scale: 1.2;
 }
 
 .preu-grup {

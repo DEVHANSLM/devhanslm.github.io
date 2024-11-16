@@ -1,0 +1,84 @@
+/* exam.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h3 {
+    color: #2c3e50;
+}
+
+/* Estilos para part1-part4 */
+.part1, .part2, .part3, .part4 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.part4 {
+    text-align: center;
+}
+
+.part4 a {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.part4 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.llista-desordenada, .llista-ordenada, .llista-descriptiva {
+    margin: 15px 0;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+table {
+    width: 35%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #2c3e50;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}

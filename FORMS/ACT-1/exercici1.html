@@ -10,26 +10,27 @@
     <div class="formulari-container">
         <h1>Formulari de Registre</h1>
         <form action="#" method="post">
+                    <!-- Nom-->
             <div class="grup-formulari">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
             </div>
-
+                    <!-- Cognoms-->
             <div class="grup-formulari">
                 <label for="cognoms">Cognoms:</label>
                 <input type="text" id="cognoms" name="cognoms" required>
             </div>
-
+                    <!-- Telèfon-->
             <div class="grup-formulari">
                 <label for="telefon">Telèfon:</label>
                 <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" required>
             </div>
-
+                    <!--Adreça -->
             <div class="grup-formulari">
                 <label for="adreca">Adreça:</label>
                 <input type="text" id="adreca" name="adreca" required>
             </div>
-
+            
             <div class="grup-formulari">
                 <label for="email">Correu Electrònic:</label>
                 <input type="email" id="email" name="email" required>
@@ -73,13 +74,12 @@
             const caracteresActuales = textarea.value.length;
             contador.innerText = caracteresActuales;
             
-            // Cambiar color según cantidad de caracteres
             if (caracteresActuales >= maxCaracteres - 10) {
                 contador.style.color = '#f44336'; // Rojo
             } else if (caracteresActuales >= maxCaracteres - 60) {
                 contador.style.color = '#ff9800'; // Naranja
             } else {
-                contador.style.color = '#555'; // Color normal
+                contador.style.color = '#555'; // Gris claro
             }
         });
     </script>

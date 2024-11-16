@@ -1,6 +1,11 @@
 /* Estilos globales */
 
+body::-webkit-scrollbar {
+  display: none;  /* Para Chrome, Safari y Opera */
+}
+
 body {
+  scrollbar-color: lime;
   font-family: 'Open Sans', sans-serif;
   background-image: url('https://i.ibb.co/SK485N4/background-digi.png');
   background-size: cover;
@@ -267,9 +272,11 @@ nav ul li a {
 
 footer {
   background-image: url('https://i.ibb.co/5FFFbvW/images-q-tbn-ANd9-Gc-Tr-M3-XUa-IRVRER-eqo062-BNr-Tg-S7-Sjj-S0-VJPg-s.jpg');
+  background-size: auto;
   background-position: center;
   padding: 20px 30px; /* 20px de padding superior e inferior, 30px de padding izquierdo y derecho */
   text-align: center;
-  height: 3.75em;
+  color: #ffc107;
+  height: 58px;
 }
 

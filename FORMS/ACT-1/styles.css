@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+    display: none;  /* Para Chrome, Safari y Opera */
+  }
+
 body {
     font-family: 'Cascadia Code', sans-serif;
     max-width: 800px;
